@@ -1,16 +1,16 @@
 # Site settings
-title: Lokmont
-description: Lokmont is a responsive simple theme for Jekyll.
+title: kyleisun.cool
+description: un.known, un.funny, un.cool
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://lokmont-jekyll.netlify.com/" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Banner Section
 hero: 112.jpg
-hero-title: Welcome to Lokmont
-hero-description: A Responsive Jekyll Blog Theme. Theme suitable for any kind of creators.
+hero-title: kyleisun.cool
+hero-description: The only true currency in this bankrupt world is what we share with someone else when we're un.cool -- Lester Bangs, Almost Famous
 
 # Author - Creator
-author-name: Ben Campbell
+author-name: K. Joseph Sowards-Gesquiere
 author-image: 10.jpg
 about-author: My name is Ben Campbell. I'm an actor and a musician. Retro wolf banjo succulen tsgoch ujang tumeric hammock offal.
 author-email: help.example@gmail.com
