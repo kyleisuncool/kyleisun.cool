@@ -389,17 +389,18 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'PT Serif', serif;
+  font-family: 'Merriweather', serif;
   font-weight: 400;
   line-height: 1.5;
   margin: 0 0 30px;
-  color: #000000;
+  color: #0e0e0e;
 }
 
 p {
-  font-family: 'PT Serif', serif;
+  font-family: 'Merrieweather', serif;
   line-height: 1.58;
   margin: 0 0 30px;
+  font-weight: 300;
   color: rgba(0, 0, 0, 0.8);
 }
 
@@ -652,7 +653,7 @@ table tr:hover {
 .site-header {
   height: 60px;
   position: relative;
-  background-color: #0078d9;
+  background-color: #0e0e0e;
   overflow: hidden;
 }
 
@@ -745,7 +746,7 @@ table tr:hover {
 .nav-toggle-close {
   right: 20px;
   top: 16px;
-  color: #000000;
+  color: #0e0e0e;
 }
 
 /* 2.1 ========== Search Box ========== */
@@ -802,11 +803,6 @@ table tr:hover {
 }
 
 .search-form ::-moz-placeholder {
-  color: #ffffff;
-  opacity: 1;
-}
-
-.search-form :-ms-input-placeholder {
   color: #ffffff;
   opacity: 1;
 }
@@ -993,7 +989,7 @@ table tr:hover {
 .info-social-list li a,
 .info-social-list li span {
   font-size: 21px;
-  color: #000000;
+  color: #0e0e0e;
   -webkit-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
@@ -1063,7 +1059,6 @@ table tr:hover {
 
 .posts {
   width: 100%;
-  width: -webkit-calc(100% / 12 * 4 - 30px);
   width: calc(100% / 12 * 4 - 30px);
   position: relative;
   display: inline-block;
@@ -1204,7 +1199,7 @@ table tr:hover {
 }
 
 .post-body h2 a:hover {
-  color: #000000;
+  color: #0e0e0e;
 }
 
 .post-body p {
@@ -1225,7 +1220,7 @@ table tr:hover {
 }
 
 .post-body .more:hover {
-  color: #000000;
+  color: #0e0e0e;
   -webkit-box-shadow: inset 0 -8px 0 rgba(0, 197, 217, 0.6);
           box-shadow: inset 0 -8px 0 rgba(0, 197, 217, 0.6);
 }
@@ -1549,7 +1544,7 @@ table tr:hover {
 
 .page-navigation .prev-page:hover span,
 .page-navigation .next-page:hover span {
-  color: #000000;
+  color: #0e0e0e;
 }
 
 .page-navigation .prev-page i,
@@ -1684,7 +1679,7 @@ table tr:hover {
 
 .site-footer {
   position: relative;
-  background-color: #000000;
+  background-color: #0e0e0e;
 }
 
 .site-footer .footer-wrapper {
@@ -2026,7 +2021,6 @@ table tr:hover {
   }
 
   .posts {
-    width: -webkit-calc(100% / 12 * 6 - 30px);
     width: calc(100% / 12 * 6 - 30px);
   }
 }
@@ -2070,7 +2064,6 @@ table tr:hover {
   }
 
   .posts {
-    width: -webkit-calc(100% / 12 * 12 - 30px);
     width: calc(100% / 12 * 12 - 30px);
   }
 
