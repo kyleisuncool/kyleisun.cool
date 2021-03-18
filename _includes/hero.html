@@ -6,6 +6,10 @@
           {{site-hero-title-two}}
       {% else %}Welcome to <span>Lokmont</span>{% endif %}
     </h1>
-    <!-- <div class="hero&#45;description">{% if site.hero&#45;description %}{{site.hero&#45;description}}{% else %}A Responsive Jekyll Blog Theme. Theme suitable for any kind of creators.{% endif %}</div> -->
+    <div class="hero-description">
+      {% if site.hero-description %}
+      <h2>{{site.hero-description}}{% else %}A Responsive Jekyll Blog Theme. Theme suitable for any kind of creators.</h2>
+        {% endif %}
+    </div>
   </div>
 </div> <!-- /.hero -->
