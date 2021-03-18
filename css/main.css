@@ -793,7 +793,7 @@ table tr:hover {
 .search-form input[type="text"] {
   font-size: 14px;
   color: #ffffff;
-  background-color: #0078d9;
+  background-color: #0e0e0e;
   border: none;
 }
 
@@ -849,7 +849,7 @@ table tr:hover {
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
-  background-color: #005ca6;
+  background-color: #323232;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
