@@ -1059,6 +1059,27 @@ table tr:hover {
 
 /* 5. ========== Posts Styles ========== */
 
+.hero-post--w-img,
+.hero-post--w-o-img {
+  width: 100%;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  -webkit-transition: all 0.35s ease;
+  -o-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+.hero-post--w-img p,
+.hero-post--w-o-img p {
+  text-align: left;
+  font-family: "Roboto Slab", serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 140%;
+  color: #505050;
+}
+
 .posts {
   width: 100%;
   width: calc(100% / 12 * 4 - 30px);
@@ -1442,9 +1463,37 @@ table tr:hover {
   margin-top: 10px;
   margin-right: 10px;
   float: left;
-  font-size: 55px;
+  font-size: 83px;
   color: #0078d9;
   line-height: 0.6;
+}
+
+.post .post-content p:first-of-type {
+  line-height: 1.6;
+  letter-spacing: 0.011em;
+  font-weight: 600;
+  font-family: 'Roboto Slab', serif;
+  color: #6f6f6f;
+}
+
+.post .post-content p {
+  letter-spacing: 0.003em;
+  font-family: charter, Georgia, Cambria, "Times New Roman", Times, serif;
+  font-size: 1.4rem;
+  margin-bottom: 2.6rem;
+  color: #585858;
+}
+
+.post .post-content blockquote p {
+  font-family: charter, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+.post .post-content h3 {
+  font-size: 1.8rem;
+  text-align: center;
+  padding-bottom: 18px;
+  margin-bottom: 2.6rem;
+  border-bottom: 1px solid #9d9d9d;
 }
 
 .post-author {
