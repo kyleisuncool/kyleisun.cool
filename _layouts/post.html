@@ -5,6 +5,7 @@ layout: default
 <div class="post-header" style="background: url({{"/images/pages/" | prepend: site.baseurl | append : page.img}})">
   <div class="post-header-info">
     <h1 class="post-title">{{ page.title | escape }}</h1>
+    <h2 class="post-subtitle">{{page.subtitle | escape}}</h2>
     <div class="post-meta">
       <time datetime="{{ page.date | date_to_xmlschema }}">
         {% assign date_format = site.minima.date_format | default: "%B %-d, %Y" %} {{ page.date | date: date_format }}

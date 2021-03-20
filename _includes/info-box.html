@@ -2,6 +2,7 @@
   <div class="wrapper-content">
     <div class="info-social">
       <ul class="info-social-list">
+
         {% if site.twitter %}
         <li>
           <a href="{{ site.twitter }}" target="_blank">
@@ -10,22 +11,16 @@
         </li>
         {% else %}
         {% endif %} 
-        {% if site.facebook %}
+
+        {% if site.tiktok %}
         <li>
-          <a href="{{ site.facebook }}" target="_blank">
-            <i class="fa fa-facebook" aria-hidden="true"></i>
+          <a href="{{ site.tiktok }}" target="_blank">
+            <i class="fa fa-tiktok" aria-hidden="true"></i>
           </a>
         </li>
         {% else %}
         {% endif %} 
-        {% if site.google-plus %}
-        <li>
-          <a href="{{ site.google-plus }}" target="_blank">
-            <i class="fa fa-google-plus" aria-hidden="true"></i>
-          </a>
-        </li>
-        {% else %}
-        {% endif %}
+
         {% if site.instagram %}
         <li>
           <a href="{{ site.instagram }}" target="_blank">
@@ -33,14 +28,16 @@
           </a>
         </li>
         {% else %}{% endif %}
-        {% if site.pinterest %}
+
+        {% if site.youtube %}
         <li>
-          <a href="{{ site.pinterest }}" target="_blank">
-            <i class="fa fa-pinterest" aria-hidden="true"></i>
+          <a href="{{ site.youtube }}" target="_blank">
+            <i class="fa fa-youtube" aria-hidden="true"></i>
           </a>
         </li>
-        {% else %}
-        {% endif %}
+        {% else %}{% endif %}
+
+
       </ul>
     </div>
     <div class="info-newsletter">

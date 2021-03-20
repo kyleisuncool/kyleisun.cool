@@ -11,6 +11,13 @@ var browserSync = require('browser-sync');
 
 var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 
+browserSync.init({
+  open: false,
+  server: {
+    baseDir: '_site'
+  }
+});
+
 // Build the Jekyll Site
 gulp.task('jekyll-build', function (done) {
     return cp.spawn( jekyll , ['build'], {stdio: 'inherit'})
