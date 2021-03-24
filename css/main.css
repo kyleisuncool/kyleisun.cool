@@ -653,7 +653,7 @@ table tr:hover {
 .site-header {
   height: 60px;
   position: relative;
-  background-color: #0e0e0e;
+  background-color: #2C1A1A;
   overflow: hidden;
 }
 
@@ -674,6 +674,19 @@ table tr:hover {
   font-weight: 400;
   text-decoration: none;
   color: #ffffff;
+}
+
+.site-logo a img {
+  height: 100%;
+  width: 56px;
+}
+
+.site-logo a strong {
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  color: #fff;
 }
 
 .navigation-wrap {
@@ -793,7 +806,7 @@ table tr:hover {
 .search-form input[type="text"] {
   font-size: 14px;
   color: #ffffff;
-  background-color: #0e0e0e;
+  background-color: #2C1A1A;
   border: none;
 }
 
@@ -965,6 +978,13 @@ table tr:hover {
 .info-social {
   width: 50%;
   float: left;
+}
+
+.find-me-links {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 56px;
 }
 
 .info-social-list {
@@ -1748,7 +1768,7 @@ table tr:hover {
 
 .site-footer {
   position: relative;
-  background-color: #0e0e0e;
+  background-color: #2C1A1A;
 }
 
 .site-footer .footer-wrapper {
@@ -1884,6 +1904,24 @@ table tr:hover {
   line-height: 1.3;
   color: #ffffff;
   text-shadow: 0px 1px 1px rgba(51, 51, 51, 0.1);
+}
+
+.page-header-wo-image {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  min-height: 83px;
+  margin-top: 56px;
 }
 
 /* 11. ========== Page Tags Styles ========== */
