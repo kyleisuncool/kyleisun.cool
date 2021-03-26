@@ -1,12 +1,12 @@
 <div class="hero" >
   <div class="hero-content">
 
-    <div class="hero-greeting">
-      {% if site.hero-title-one %}
-      <h2 class="hero-title-line-one">{{site.hero-title-one}}</h2>
-      <h2 class="hero-title-line-two">{{site.hero-title-two}}{% else %}A Responsive Jekyll Blog Theme. Theme suitable for any kind of creators.</h2>
-        {% endif %}
-    </div>
+    <!-- <div class="hero&#45;greeting"> -->
+    <!--   {% if site.hero&#45;title&#45;one %} -->
+    <!--   <h2 class="hero&#45;title&#45;line&#45;one">{{site.hero&#45;title&#45;one}}</h2> -->
+    <!--   <h2 class="hero&#45;title&#45;line&#45;two">{{site.hero&#45;title&#45;two}}{% else %}A Responsive Jekyll Blog Theme. Theme suitable for any kind of creators.</h2> -->
+    <!--     {% endif %} -->
+    <!-- </div> -->
 
     {%- for post in site.posts limit:1 -%}
     <article id="{{post.id}}" class="hero-post--w-img">
