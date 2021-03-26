@@ -684,6 +684,22 @@ table tr:hover {
   font-size: 1.6rem;
 }
 
+.site-ctrls {
+  position: fixed;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  right: 11px;
+  top: 29px;
+  display: block;
+  width: 112px;
+  height: 56px;
+}
+
+.site-ctrls .ctrl {
+  display: inline-block;
+  width: 25%;
+}
+
 .navigation-wrap {
   height: 60px;
   position: relative;
@@ -728,7 +744,6 @@ table tr:hover {
 .nav-toggle,
 .nav-toggle-close {
   font-size: 15px;
-  position: absolute;
   cursor: pointer;
   -webkit-transition: all .25s ease;
   -o-transition: all .25s ease;
@@ -743,7 +758,6 @@ table tr:hover {
 
 .nav-toggle {
   top: 50%;
-  right: 45px;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -778,9 +792,6 @@ table tr:hover {
 }
 
 .search-toggle {
-  position: absolute;
-  top: 50%;
-  right: 15px;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -974,6 +985,117 @@ table tr:hover {
 
 /* 4. ========== Info Box ========== */
 
+.info-box {
+  width: 100%;
+  min-height: 60px;
+  background-color: #ffffff;
+  padding: 30px 0 30px;
+}
+
+.info-social {
+  width: 50%;
+  float: left;
+}
+
+.find-me-links {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 56px;
+}
+
+.info-social-list {
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.info-social-list li {
+  padding: 0;
+  margin: 0;
+}
+
+.info-social-list li a {
+  width: 25%;
+  float: left;
+  text-align: center;
+  line-height: 60px;
+}
+
+.info-social-list li a:hover {
+  background-color: rgba(206, 230, 255, 0.5);
+}
+
+.info-social-list li a,
+.info-social-list li span {
+  font-size: 21px;
+  color: #0e0e0e;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.info-social-list li a:hover,
+.info-social-list li span:hover {
+  color: #0078d9;
+}
+
+.info-social-list li span {
+  cursor: pointer;
+}
+
+.info-newsletter {
+  width: 50%;
+  float: right;
+}
+
+.newsletter {
+  margin: 0 auto;
+  border: none;
+}
+
+.newsletter-form input[type="email"] {
+  color: #787878;
+}
+
+.newsletter-form .c-newsletter-form-group {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c-newsletter-email {
+  width: 70%;
+  height: 60px;
+  font-size: 14px;
+  padding: 10px 15px;
+  font-weight: 700;
+  border: 1px solid rgba(120, 120, 120, 0.19);
+  outline: none;
+}
+
+.newsletter-button {
+  display: inline-block;
+  width: 30%;
+  height: 60px;
+  font-size: 14px;
+  padding: 20px 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #0078d9;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.newsletter-button:hover {
+  background-color: #004e8d;
+}
+
 /* 5. ========== Posts Styles ========== */
 
 /* 6. ========== Post Page Styles ========== */
@@ -1091,6 +1213,17 @@ table tr:hover {
   }
 }
 
+@media only screen and (max-width: 992px) {
+  .info-box {
+    padding: 40px 0;
+  }
+
+  .info-social,
+  .info-newsletter {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 720px) {
   .hero {
     min-height: 420px;
@@ -1103,10 +1236,30 @@ table tr:hover {
   .hero-content .hero-description {
     font-size: 21px;
   }
+
+  .info-social-list li a,
+  .info-social-list li span {
+    font-size: 18px;
+  }
+
+  .c-newsletter-email {
+    height: 50px;
+  }
+
+  .newsletter-button {
+    height: 50px;
+    padding: 15px 0;
+  }
 }
 
 @media screen and (max-width: 480px) {
   .wrapper {
     margin: 50px auto 20px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .newsletter-button {
+    font-size: 13px;
   }
 }

@@ -1,18 +1,27 @@
 <header class="site-header clearfix">
   <div class="wrapper-content">
 
-    <span class="search-toggle">
-      <i class="fa fa-search" aria-hidden="true"></i>
-    </span>
-
-    <div class="nav-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
-
     <div class="site-logo">
       <a href="{{ "/" | relative_url }}">
         <img src="{{"/images/header_logo.png" | prepend: site.basurl }}" alt="">
        <strong>{{ site.title | escape }}</strong>
       </a>
-    </div>
+    </div><!-- ./site-logo -->
+
+    <div class="site-ctrls">
+
+      <div class="ctrl search-toggle">
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </span>
+      </div>
+
+      <div class="ctrl nav-toggle">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+      </div>
+
+    </div><!-- ./site-ctrls-->
+
+
 
   </div>
 </header> <!-- /.site-header -->

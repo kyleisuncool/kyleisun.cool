@@ -29,6 +29,21 @@
   font-size: 1.6rem;
 }
 
+.site-ctrls {
+  position: fixed;
+  border-radius: 8px;
+  right: 11px;
+  top: 29px;
+  display: block;
+  width: 112px;
+  height: 56px;
+
+  .ctrl{
+    display: inline-block;
+    width: 25%;
+  }
+}
+
 .navigation-wrap {
   height: 60px;
   position: relative;
@@ -64,7 +79,6 @@
 .nav-toggle, .nav-toggle-close {
   // display: none;
   font-size: 15px;
-  position: absolute;
   cursor: pointer;
   transition: all .25s ease;
   z-index: 10;
@@ -74,7 +88,6 @@
 }
 .nav-toggle {
   top: 50%;
-  right: 45px;
   transform: translateY(-50%);
   color: black;
 }
