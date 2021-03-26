@@ -9,8 +9,6 @@
   background-size: cover !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
-  padding-top: 2.6rem;
-  padding-bottom: 2.6rem;
   &::before {
     content: "";
     display: block;
@@ -21,7 +19,23 @@
 .hero-content {
   max-width: 750px;
   padding: 0 20px;
-  text-align: center;
+
+  h2.hero-title-line-one{
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 700;
+    color: lighten($black, 17);
+  }
+
+  h2.hero-title-line-two {
+    margin: 0;
+    font-size: 2.75rem;
+    font-weight: 700;
+    color: lighten($black, 29);
+  }
+
+  h3.her
+
   .hero-title {
     margin: 0;
     font-size: 56px;

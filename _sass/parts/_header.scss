@@ -7,30 +7,26 @@
 .site-logo {
   float: left;
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  text-align: center;
   a {
     display: inline-block;
-    font-family: 'Dancing Script', cursive;
     font-size: 36px;
     font-weight: 400;
     text-decoration: none;
-    color: $white;
+    color: $black;
   }
 }
 
 .site-logo a img {
   height: 100%;
   width: 56px;
+  padding-top: 8px;
 }
 
 .site-logo a strong{
-  position: absolute;
-  top: 0;
-  left: 0;
-  visibility: hidden;
-  color: #fff;
+  color: lighten($black, 11);
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  font-size: 1.6rem;
 }
 
 .navigation-wrap {
@@ -66,7 +62,7 @@
 }
 
 .nav-toggle, .nav-toggle-close {
-  display: none;
+  // display: none;
   font-size: 15px;
   position: absolute;
   cursor: pointer;
@@ -80,7 +76,7 @@
   top: 50%;
   right: 45px;
   transform: translateY(-50%);
-  color: $white;
+  color: black;
 }
 .nav-toggle-close {
   right: 20px;
