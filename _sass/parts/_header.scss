@@ -1,81 +1,92 @@
 .site-header {
-  height: 60px;
+  display: block;
+}
+
+.site-header::before{
+    content: "";
+    display: table;
+    table-layout: fixed;
+}
+
+.site-header .site-title{
+  width: 100%;
+  margin: 0 auto 50px;
+  max-width: 960px;
   position: relative;
   overflow: hidden;
+  text-align: center;
+  font-size: 4rem;
 }
 
 .site-logo {
   float: left;
   position: absolute;
-  a {
-    display: inline-block;
-    font-size: 36px;
-    font-weight: 400;
-    text-decoration: none;
-    color: $black;
-  }
+}
+
+.site-nav {
+  background: rgba(255,255,255,.83);
+  border-bottom: 1px solid #ddd;
+  clear: both;
+  display: block;
+  float: left;
+  font-weight: 700;
+  height: 56px;
+  line-height: 56px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1;
 }
 
 .site-logo a img {
   height: 100%;
   width: 56px;
-  padding-top: 8px;
-}
-
-.site-logo a strong{
-  color: lighten($black, 11);
-  font-family: 'Roboto Slab', serif;
-  font-weight: 400;
-  font-size: 1.6rem;
+  padding-left: 11px;
 }
 
 .site-ctrls {
-  position: fixed;
-  border-radius: 8px;
-  right: 11px;
-  top: 29px;
   display: block;
-  width: 112px;
-  height: 56px;
   z-index: 100;
+  position: absolute;
+  right: 0px;
+  width: 25%;
+  padding: 29px 0px 0px 0px;
 
   .ctrl{
     display: inline-block;
     width: 25%;
+    float: right;
   }
 }
 
-.navigation-wrap {
-  height: 60px;
-  position: relative;
-}
-
-.site-nav {
-  float: left;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  a {
-    position: relative;
-    font-size: 12px;
-    padding: 22px 30px;
-    font-family: 'Lato', sans-serif;
-    letter-spacing: 0.8px;
-    line-height: 60px;
-    font-weight: 700;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: $white;
-    transition: all 0.2s ease;
-    &:hover {
-      color: rgba(255, 255, 255, 0.7);
-    }
-  }
-  &.open {
-    transform: translateX(0px);
-  }
-}
+// .site-nav {
+//   float: left;
+//   position: relative;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   a {
+//     position: relative;
+//     font-size: 12px;
+//     padding: 22px 30px;
+//     font-family: 'Lato', sans-serif;
+//     letter-spacing: 0.8px;
+//     line-height: 60px;
+//     font-weight: 700;
+//     text-decoration: none;
+//     text-transform: uppercase;
+//     color: $white;
+//     transition: all 0.2s ease;
+//     &:hover {
+//       color: rgba(255, 255, 255, 0.7);
+//     }
+//   }
+//   &.open {
+//     transform: translateX(0px);
+//   }
+// }
 
 .nav-toggle, .nav-toggle-close {
   // display: none;
