@@ -693,6 +693,7 @@ table tr:hover {
   display: block;
   width: 112px;
   height: 56px;
+  z-index: 100;
 }
 
 .site-ctrls .ctrl {
@@ -989,7 +990,7 @@ table tr:hover {
   width: 100%;
   min-height: 60px;
   background-color: #ffffff;
-  padding: 30px 0 30px;
+  padding: 0;
 }
 
 .info-social {
