@@ -15,12 +15,18 @@
   position: relative;
   overflow: hidden;
   text-align: center;
-  font-size: 4rem;
+  font-size: 4.4rem;
 }
 
 .site-logo {
   float: left;
   position: absolute;
+
+  a img{
+    height: 100%;
+    width: 65px;
+    padding-left: 11px;
+  }
 }
 
 .site-nav {
@@ -38,12 +44,6 @@
   right: 0;
   width: 100%;
   z-index: 1;
-}
-
-.site-logo a img {
-  height: 100%;
-  width: 56px;
-  padding-left: 11px;
 }
 
 .site-ctrls {
